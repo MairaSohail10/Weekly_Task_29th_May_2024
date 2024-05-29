@@ -28,6 +28,20 @@ class MainActivity : ComponentActivity() {
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally)
                 {
+
+                    /*
+                     Time Complexity is O(n) as we visit all the characters in the string once.
+
+                     Space Complexity depends on the size of the character set. So,
+                     Space Complexity is O(min(n,m)) when storing unique characters in the set,
+                     in worst case scenario it is o(n) as all the characters could be unique
+                     and character set size and size of string become equal.
+
+                     n is the size of the string.
+                     m is the size of the character set.
+
+                    */
+
                     Text(text = lengthOfLongestSubstring("ABCDEFGABEF").toString())
                 }
 //                val navController= rememberNavController()
